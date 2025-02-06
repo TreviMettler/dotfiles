@@ -76,3 +76,9 @@ pidof -q polkit-gnome-authentication-agent-1 || { /usr/lib/polkit-gnome/polkit-g
 # Start one time code
 sh -c 'alacritty --hold -e cat $HOME/.config/bspwm/src/config/FirstMessage.txt && sed -i "/# Start one time code/,/# End one time code/d" ~/.config/bspwm/bspwmrc'
 # End one time code
+
+# Allows menu to be called using only the windows key
+ksuperkey -e "Super_L=Super_L|F1"
+
+# Connects to my phone
+kdeconnect-cli --refresh

@@ -393,7 +393,7 @@ clear
 
 logo "Installing AUR dependencies."
 
-aur_apps=(tdrop-git xqp xwinwrap-0.9-bin ttf-maple i3lock-color simple-mtpfs eww-git)
+aur_apps=(tdrop-git xqp xwinwrap-0.9-bin ttf-maple i3lock-color simple-mtpfs eww-git ksuperkey)
 
 printf "%s%sChecking for required packages...%s\n\n" "${BLD}" "${CBL}" "${CNC}"
 for aur_package in "${aur_apps[@]}"; do

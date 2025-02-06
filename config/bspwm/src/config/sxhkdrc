@@ -18,11 +18,11 @@ alt + F1
 # ----- Main Apps ----- #
 
 # Open Terminal (Normal & Floating)
-super + {_,alt + }Return
+super + {_,shift + }Return
 	OpenApps --{terminal,floating}
 
 # App launcher
-super + @space
+super + F1
 	OpenApps --menu
 
 # Theme Selector
@@ -140,6 +140,10 @@ super + Escape
 # Set the node state
 alt + {t,shift + t,a,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
 
 # Set the node flags
 alt + {m,x,s,p}
